@@ -7,7 +7,7 @@ $(document).ready(function () {
 
         let selector = $(e.target).attr('data-filter');
         $('.project-area .grid').isotope({
-            filter:selector
+            filter: selector
         });
 
         return false;
@@ -16,7 +16,16 @@ $(document).ready(function () {
     $('.project-area .button-group #btn1-active').trigger('click');
 
     $('.project-area .grid .test-popup-link').magnificPopup({
-        type:'image',
-        gallery:{enabled: true}
+        type: 'image',
+        gallery: {enabled: true}
     });
+
+    // OWL Carousel
+    $('.site-main .latest-area .owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        dots: true
+    });
+
+
 });
