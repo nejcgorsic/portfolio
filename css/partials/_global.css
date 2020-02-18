@@ -29,7 +29,8 @@
     color: black;
 }
 
-.button.primary-button::after {
+.button.primary-button::after,
+button.secondary-button::after {
     position: absolute;
     top: -2px;
     left: -2px;
@@ -40,4 +41,22 @@
     z-index: -1;
     border-radius: 4px;
 
+}
+
+.button.secondary-button {
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+
+}
+
+.button.secondary-button:hover {
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
+}
+
+p.para {
+    color: var(--text-color);
+    font: normal 500 16px/25px;
 }

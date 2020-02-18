@@ -48,6 +48,7 @@
 /* start Banner area */
 .site-main .site-banner {
     background: url(../img/banner/home-banner.png) no-repeat 0% 20%;
+    z-index: -1000;
 }
 
 .site-main .site-banner .site-banner__title h3 {
@@ -71,3 +72,20 @@
 
 
 /* end Banner area */
+
+/* start About area */
+.site-main .about-area {
+    padding: 12rem 5rem;
+}
+
+.site-main .about-area .about-title h2>span {
+    display: block;
+    font: normal bold 49px/60px var(--primary-font);
+    letter-spacing: 15px;
+}
+
+.site-main .about-area .about-title .paragraph>p {
+    padding: .4rem 0;
+}
+
+/* End About area */
