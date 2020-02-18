@@ -12,10 +12,13 @@
     <!-- Font awesome icons -->
     <link rel="stylesheet" href="./css/all.min.css">
 
+    <!-- Magnific pop up css file-->
+    <link rel="stylesheet" href="/js/vendor/Magnific-Popup-master/dist/magnific-popup.css">
     <!-- Custom CSS File -->
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
+
 
 <body>
 <!-- ============== start HEADER AREA ============== -->
@@ -217,22 +220,24 @@
             </div>
 
             <div class="button-group">
-                <button type="button" class="Active">All</button>
+                <button type="button" class="Active" id="btn1-active">All</button>
                 <button type="button" data-filter=".first_project">Bootstrap</button>
                 <button type="button" data-filter=".second_project">Flexbox</button>
-                <button type="button"data-filter=".third_project">Grid System</button>
-                <button type="button"data-filter=".fourth_project">Javascript</button>
-                <button type="button"data-filter=".fifth_project">Angular</button>
+                <button type="button" data-filter=".third_project">Grid System</button>
+                <button type="button" data-filter=".fourth_project">Javascript</button>
+                <button type="button" data-filter=".fifth_project">Angular</button>
             </div>
 
             <div class="row grid">
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item second_project">
                     <div class="our-project">
                         <div class="img">
-                            <img src="./img/project/p1.jpg" alt="Portfolio 1">
+                            <a class="test-popup-link" href="./img/project/p1.jpg">
+                                <img src="./img/project/p1.jpg" alt="Portfolio 1">
+                            </a>
                         </div>
                         <div class="title py-4">
-                            <h4 class="text-uppercase">Bootstrap design</h4>
+                            <h4 class="text-uppercase">Pop Up</h4>
                             <span class="text-secondary">Latest, Portfolio</span>
                         </div>
                     </div>
@@ -240,7 +245,9 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item first_project">
                     <div class="our-project">
                         <div class="img">
-                            <img src="./img/project/p2.jpg" alt="Portfolio 2">
+                            <a class="test-popup-link" href="./img/project/p2.jpg">
+                                <img src="./img/project/p2.jpg" alt="Portfolio 2">
+                            </a>
                         </div>
                         <div class="title py-4">
                             <h4 class="text-uppercase">Flexbox</h4>
@@ -251,7 +258,9 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item first_project">
                     <div class="our-project">
                         <div class="img">
-                            <img src="./img/project/p3.jpg" alt="Portfolio 3">
+                            <a class="test-popup-link" href="./img/project/p3.jpg">
+                                <img src="./img/project/p3.jpg" alt="Portfolio 1">
+                            </a>
                         </div>
                         <div class="title py-4">
                             <h4 class="text-uppercase">FEMALE LIGHT</h4>
@@ -262,7 +271,9 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item third_project">
                     <div class="our-project">
                         <div class="img">
-                            <img src="./img/project/p4.jpg" alt="Portfolio 3">
+                            <a class="test-popup-link" href="./img/project/p4.jpg">
+                                <img src="./img/project/p4.jpg" alt="Portfolio 1">
+                            </a>
                         </div>
                         <div class="title py-4">
                             <h4 class="text-uppercase">FEMALE LIGHT</h4>
@@ -273,7 +284,9 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item fourth_project">
                     <div class="our-project">
                         <div class="img">
-                            <img src="./img/project/p5.jpg" alt="Portfolio 3">
+                            <a class="test-popup-link" href="./img/project/p5.jpg">
+                                <img src="./img/project/p5.jpg" alt="Portfolio 1">
+                            </a>
                         </div>
                         <div class="title py-4">
                             <h4 class="text-uppercase">FEMALE LIGHT</h4>
@@ -284,7 +297,9 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 element-item fifth_project">
                     <div class="our-project">
                         <div class="img">
-                            <img src="./img/project/p1.jpg" alt="Portfolio 3">
+                            <a class="test-popup-link" href="./img/project/p1.jpg">
+                                <img src="./img/project/p1.jpg" alt="Portfolio 1">
+                            </a>
                         </div>
                         <div class="title py-4">
                             <h4 class="text-uppercase">FEMALE LIGHT</h4>
@@ -306,8 +321,9 @@
 <!-- Bootstrap JS  -->
 <script src="js/bootstrap.min.js"></script>
 
-<!-- ISOTOp JS  -->
-<script src="js/vendor/isotope.min.js"></script>
+<!-- Isotope and Magnific JS  -->
+<script src="js/vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+<script src="js/vendor/isotope/isotope.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>
