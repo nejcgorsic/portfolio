@@ -1,2 +1,27 @@
 /* Import font from font.css file */
 @import url(./fonts.css);
+
+/* start HNAVIGATION  */
+
+
+.header .main-menu .navbar .navbar-brand {
+    padding: 0 2rem 0 5rem;
+}
+
+.header_logo {
+    width: 110px;
+}
+
+.header .main-menu .navbar {
+    padding: 1rem 20rem;
+}
+
+.header .main-menu .nav-item .nav-link {
+    font-family: 'Raleway', cursive;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 1.7rem;
+    color: black;
+}
+
+/* end NAVIGATION */
